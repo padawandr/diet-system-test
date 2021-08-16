@@ -5,6 +5,8 @@
 
 .terms-field input {
 	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
 	border: 2px solid var(--color-icon);
 	border-radius: .4rem;
 	height: 1.8rem;

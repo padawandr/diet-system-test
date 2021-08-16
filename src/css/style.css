@@ -58,6 +58,11 @@ input {
 	max-width: 27rem;
 	padding: 1.5rem;
 	text-align: center;
+	transition: filter ease .2s;
+}
+
+.btn:hover {
+	filter: brightness(1.05);
 }
 
 .btn.primary {
@@ -145,6 +150,14 @@ form {
 
 .input-field {
 	margin-bottom: 1rem;
+}
+
+.eye {
+	cursor: pointer;
+}
+
+.eye.active {
+	filter: grayscale(1);
 }
 
 form > .btn {

@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/signup.css">
 
+	<link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
 	<title>DietSystem - Cadastro</title>
 </head>
 
@@ -26,7 +27,7 @@
 				<img class="logo" src="./assets/logo.svg" alt="Logo da DietSystem">
 				<div class="two-buttons">
 					<a class="btn primary" href="#">Cadastra-se</a>
-					<a class="btn" href="#">Já tenho cadastro</a>
+					<a class="btn" href="./login.html">Já tenho cadastro</a>
 				</div>
 				<form>
 					<div class="input-field">
@@ -44,12 +45,12 @@
 					<div class="input-field">
 						<img src="./assets/icon-padlock.svg" alt="">
 						<input type="password" name="password1" id="password1" placeholder="Digite uma senha forte" required>
-						<img class="eye" src="./assets/icon-eye.svg" alt="">
+						<img class="eye" src="./assets/icon-eye.svg" alt="" onclick="togglePassword(1)">
 					</div>
 					<div class="input-field">
 						<img src="./assets/icon-padlock.svg" alt="">
 						<input type="password" name="password2" id="password2" placeholder="Digite a senha novamente" required>
-						<img class="eye" src="./assets/icon-eye.svg" alt="">
+						<img class="eye" src="./assets/icon-eye.svg" alt="" onclick="togglePassword(2)">
 					</div>
 					<div class="terms-field">
 						<input type="checkbox" name="terms" id="terms" required>
@@ -60,6 +61,9 @@
 			</div>
 		</section>
 	</main>
+
+	<!-- js -->
+	<script src="./js/app.js"></script>
 
 </body>
 
