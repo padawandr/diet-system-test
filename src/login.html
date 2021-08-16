@@ -13,6 +13,7 @@
 
 	<!-- css -->
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/login.css">
 
 	<title>DietSystem - Login</title>
 </head>
@@ -23,18 +24,18 @@
 		<section>
 			<div class="container">
 				<img class="logo" src="./assets/logo.svg" alt="Logo da DietSystem">
-				<div class="menu">
+				<div class="two-buttons">
 					<a class="btn" href="#">Cadastra-se</a>
 					<a class="btn primary" href="#">Já tenho cadastro</a>
 				</div>
 				<form>
 					<div class="input-field">
 						<img src="./assets/icon-email.svg" alt="">
-						<input type="email" placeholder="admin@dietsystem.com">
+						<input type="email" name="email" id="email" placeholder="admin@dietsystem.com" required>
 					</div>
 					<div class="input-field">
 						<img src="./assets/icon-padlock.svg" alt="">
-						<input type="password" placeholder="Digite a sua senha">
+						<input type="password" name="password" id="password" placeholder="Digite a sua senha" required>
 						<img class="eye" src="./assets/icon-eye.svg" alt="">
 					</div>
 					<div class="forgot-password">

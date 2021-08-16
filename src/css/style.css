@@ -46,7 +46,6 @@ input {
 	flex-direction: column;
 	margin: auto;
 	max-width: 42rem;
-	/* padding: 3rem 0; */
 	padding: 3rem 1rem;
 }
 
@@ -100,11 +99,10 @@ section .logo {
 	margin-bottom: 5rem;
 }
 
-section .menu {
+section .two-buttons {
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: 1fr 1fr;
-	/* margin-top: 6rem; */
 	width: 100%;
 }
 
@@ -149,70 +147,10 @@ form {
 	margin-bottom: 1rem;
 }
 
-.forgot-password {
-	/* margin-top: 1rem; */
-	text-align: right;
-}
-
-.terms-field {
-	align-items: center;
-	display: flex;
-}
-
-.terms-field input {
-	appearance: none;
-	border: 2px solid var(--color-icon);
-	border-radius: .4rem;
-	height: 1.8rem;
-	position: relative;
-	width: 1.8rem;
-}
-
-.terms-field input:checked {
-	background-color: var(--color-primary);
-	border-color: var(--color-primary);
-	color: var(--color-font-light);
-}
-
-.terms-field input:checked::after {
-	content: '\2714';
-	position: absolute;
-	top: -.2rem;
-}
-
-.terms-field label {
-	color: var(--color-font-dark);
-	font-size: 1rem;
-	margin-left: .4rem;
-}
-
-.terms-field label a {
-	font-size: inherit;
-	font-weight: 400;
-}
-
-form button {
+form > .btn {
 	margin: 2rem auto 0;
 	width: 100%;
 }
-
-/**/
-.info {
-	color: var(--color-font-dark);
-	text-align: center;
-}
-
-.info p {
-	margin-top: 1.5rem;
-}
-
-form .menu {
-	margin-top: 2.5rem;
-}
-
-/**/
-/* info h3 align left */
-/* button martop 3.2rem */
 
 /* RESPONSIVENESS ----------================================================= */
 

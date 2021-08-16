@@ -13,6 +13,7 @@
 
 	<!-- css -->
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/signup.css">
 
 	<title>DietSystem - Cadastro</title>
 </head>
@@ -23,35 +24,35 @@
 		<section>
 			<div class="container">
 				<img class="logo" src="./assets/logo.svg" alt="Logo da DietSystem">
-				<div class="menu">
+				<div class="two-buttons">
 					<a class="btn primary" href="#">Cadastra-se</a>
 					<a class="btn" href="#">Já tenho cadastro</a>
 				</div>
 				<form>
 					<div class="input-field">
 						<img src="./assets/icon-user.svg" alt="">
-						<input type="text" name="name" id="name" placeholder="Seu nome">
+						<input type="text" name="name" id="name" placeholder="Seu nome" required>
 					</div>
 					<div class="input-field">
 						<img src="./assets/icon-phone.svg" alt="">
-						<input type="tel" name="phone" id="phone" placeholder="Seu número de celular">
+						<input type="tel" name="phone" id="phone" placeholder="Seu número de celular" required>
 					</div>
 					<div class="input-field">
 						<img src="./assets/icon-email.svg" alt="">
-						<input type="email" name="email" id="email" placeholder="Seu e-mail">
+						<input type="email" name="email" id="email" placeholder="Seu e-mail" required>
 					</div>
 					<div class="input-field">
 						<img src="./assets/icon-padlock.svg" alt="">
-						<input type="password" name="password1" id="password1" placeholder="Digite uma senha forte">
+						<input type="password" name="password1" id="password1" placeholder="Digite uma senha forte" required>
 						<img class="eye" src="./assets/icon-eye.svg" alt="">
 					</div>
 					<div class="input-field">
 						<img src="./assets/icon-padlock.svg" alt="">
-						<input type="password" name="password2" id="password2" placeholder="Digite a senha novamente">
+						<input type="password" name="password2" id="password2" placeholder="Digite a senha novamente" required>
 						<img class="eye" src="./assets/icon-eye.svg" alt="">
 					</div>
 					<div class="terms-field">
-						<input type="checkbox" name="terms" id="terms">
+						<input type="checkbox" name="terms" id="terms" required>
 						<label for="terms">Declaro que li e concordo com os <a class="link" href="#">termos de uso</a>, e a <a class="link" href="#">política de privacidade.</a></label>
 					</div>
 					<button class="btn primary" type="submit">Finalizar cadastro</button>

@@ -1,0 +1,12 @@
+.info {
+	color: var(--color-font-dark);
+	text-align: center;
+}
+
+.info p {
+	margin-top: 1.5rem;
+}
+
+form .two-buttons {
+	margin-top: 2.5rem;
+}
