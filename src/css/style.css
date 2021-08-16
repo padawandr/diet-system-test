@@ -32,6 +32,7 @@ input {
 	--color-neutral: #e5e5e5;
 	--color-font-dark: #777;
 	--color-font-light: #fff;
+	--color-icon: rgba(119, 119, 119, 0.6);
 	--color-input-light: rgba(119, 119, 119, 0.3);
 	--color-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	--font-large: 1.4rem;
@@ -92,13 +93,11 @@ section {
 	background-color: var(--color-bg-section);
 	box-shadow: var(--color-shadow);
 	margin: 3rem 0;
-	/* width: min(80%, 90rem); */
 	width: 100%;
 }
 
 section .menu {
 	display: grid;
-	/* gap: 2rem; */
 	gap: 1rem;
 	grid-template-columns: 1fr 1fr;
 	margin-top: 6rem;
@@ -124,12 +123,13 @@ form {
 }
 
 .input-field + .input-field {
-	margin-top: 3.2rem;
+	margin-top: 3rem;
 }
 
 .input-field input {
 	color: var(--color-font-dark);
-	margin: 0 1.6rem;
+	margin-left: 1.6rem;
+	margin-right: 1.6rem;
 	width: 100%;
 }
 
@@ -141,9 +141,50 @@ form {
 	color: var(--color-input-light);
 }
 
+.input-field {
+	margin-bottom: 1rem;
+}
+
 .forgot-password {
-	margin-top: 1rem;
+	/* margin-top: 1rem; */
 	text-align: right;
+}
+
+.terms-field {
+	align-items: center;
+	display: flex;
+}
+
+.terms-field input {
+	appearance: none;
+	border: 2px solid var(--color-icon);
+	border-radius: .4rem;
+	height: 1.8rem;
+	position: relative;
+	width: 1.8rem;
+}
+
+.terms-field input:checked {
+	background-color: var(--color-primary);
+	border-color: var(--color-primary);
+	color: var(--color-font-light);
+}
+
+.terms-field input:checked::after {
+	content: '\2714';
+	position: absolute;
+	top: -.2rem;
+}
+
+.terms-field label {
+	color: var(--color-font-dark);
+	font-size: 1rem;
+	margin-left: .4rem;
+}
+
+.terms-field label a {
+	font-size: inherit;
+	font-weight: 400;
 }
 
 form button {

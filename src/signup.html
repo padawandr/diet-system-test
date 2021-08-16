@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+	<!-- css -->
+	<link rel="stylesheet" href="./css/style.css">
+
+	<title>DietSystem - Cadastro</title>
+</head>
+
+<body>
+
+	<main>
+		<section>
+			<div class="container">
+				<img src="./assets/logo.svg" alt="Logo da DietSystem">
+				<div class="menu">
+					<a class="btn primary" href="#">Cadastra-se</a>
+					<a class="btn" href="#">Já tenho cadastro</a>
+				</div>
+				<form>
+					<div class="input-field">
+						<img src="./assets/icon-user.svg" alt="">
+						<input type="text" name="name" id="name" placeholder="Seu nome">
+					</div>
+					<div class="input-field">
+						<img src="./assets/icon-phone.svg" alt="">
+						<input type="tel" name="phone" id="phone" placeholder="Seu número de celular">
+					</div>
+					<div class="input-field">
+						<img src="./assets/icon-email.svg" alt="">
+						<input type="email" name="email" id="email" placeholder="Seu e-mail">
+					</div>
+					<div class="input-field">
+						<img src="./assets/icon-padlock.svg" alt="">
+						<input type="password" name="password1" id="password1" placeholder="Digite uma senha forte">
+						<img class="eye" src="./assets/icon-eye.svg" alt="">
+					</div>
+					<div class="input-field">
+						<img src="./assets/icon-padlock.svg" alt="">
+						<input type="password" name="password2" id="password2" placeholder="Digite a senha novamente">
+						<img class="eye" src="./assets/icon-eye.svg" alt="">
+					</div>
+					<div class="terms-field">
+						<input type="checkbox" name="terms" id="terms">
+						<label for="terms">Declaro que li e concordo com os <a class="link" href="#">termos de uso</a>, e a <a class="link" href="#">política de privacidade.</a></label>
+					</div>
+					<button class="btn primary" type="submit">Finalizar cadastro</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+</body>
+
+</html>
