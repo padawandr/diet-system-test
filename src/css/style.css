@@ -96,11 +96,15 @@ section {
 	width: 100%;
 }
 
+section .logo {
+	margin-bottom: 5rem;
+}
+
 section .menu {
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: 1fr 1fr;
-	margin-top: 6rem;
+	/* margin-top: 6rem; */
 	width: 100%;
 }
 
@@ -190,6 +194,20 @@ form {
 form button {
 	margin: 2rem auto 0;
 	width: 100%;
+}
+
+/**/
+.info {
+	color: var(--color-font-dark);
+	text-align: center;
+}
+
+.info p {
+	margin-top: 2rem;
+}
+
+form .menu {
+	margin-top: 2.5rem;
 }
 
 /* RESPONSIVENESS ----------================================================= */
