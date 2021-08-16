@@ -127,7 +127,7 @@ form {
 }
 
 .input-field + .input-field {
-	margin-top: 3rem;
+	margin-top: 2.5rem;
 }
 
 .input-field input {
@@ -203,12 +203,16 @@ form button {
 }
 
 .info p {
-	margin-top: 2rem;
+	margin-top: 1.5rem;
 }
 
 form .menu {
 	margin-top: 2.5rem;
 }
+
+/**/
+/* info h3 align left */
+/* button martop 3.2rem */
 
 /* RESPONSIVENESS ----------================================================= */
 
