@@ -34,6 +34,7 @@ input {
 	--color-font-light: #fff;
 	--color-icon: rgba(119, 119, 119, 0.6);
 	--color-input-light: rgba(119, 119, 119, 0.3);
+	--color-placeholder: rgba(119, 119, 119, 0.5);
 	--color-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	--font-large: 1.4rem;
 	--font-small: 1.3rem;
@@ -145,7 +146,7 @@ form {
 }
 
 .input-field input::placeholder {
-	color: var(--color-input-light);
+	color: var(--color-placeholder);
 }
 
 .input-field {
