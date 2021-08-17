@@ -41,6 +41,22 @@ input {
 	font-size: 62.5%;
 }
 
+.screen {
+	opacity: 1;
+	transition: all ease-in-out .3s;
+}
+
+.screen.hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
 .container {
 	align-items: center;
 	display: flex;
@@ -165,6 +181,80 @@ form > .btn {
 	margin: 2rem auto 0;
 	width: 100%;
 }
+
+/* LOGIN ----------========================================================== */
+
+.login .forgot-password {
+	text-align: right;
+}
+
+/* SIGNUP ----------========================================================= */
+.signup .terms-field {
+	align-items: center;
+	display: flex;
+}
+
+.signup .terms-field input {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: 2px solid var(--color-icon);
+	border-radius: .4rem;
+	height: 1.8rem;
+	position: relative;
+	width: 1.8rem;
+}
+
+.signup .terms-field input:checked {
+	background-color: var(--color-primary);
+	border-color: var(--color-primary);
+	color: var(--color-font-light);
+}
+
+.signup .terms-field input:checked::after {
+	content: '\2714';
+	position: absolute;
+	top: -.2rem;
+}
+
+.signup .terms-field label {
+	color: var(--color-font-dark);
+	font-size: 1rem;
+	margin-left: .4rem;
+}
+
+.signup .terms-field label a {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+
+/* RECOVER ----------======================================================== */
+.recover .info {
+	color: var(--color-font-dark);
+	text-align: center;
+}
+
+.recover .info p {
+	margin-top: 1.5rem;
+}
+
+.recover form .two-buttons {
+	margin-top: 2.5rem;
+}
+
+
+/* SET PASSWORD ----------=================================================== */
+.setpassword .info {
+	color: var(--color-font-dark);
+	text-align: left;
+	width: 100%;
+}
+
+.setpassword form .btn {
+	margin-top: 3.2rem;
+}
+
 
 /* RESPONSIVENESS ----------================================================= */
 

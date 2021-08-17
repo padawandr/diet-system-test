@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+	<!-- css -->
+	<link rel="stylesheet" href="./css/style.css">
+
+	<link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
+	<title>DietSystem</title>
+</head>
+
+<body>
+
+	<main>
+		<section>
+			<div class="login screen">
+				<div class="container">
+					<img class="logo" src="./assets/logo.svg" alt="Logo da DietSystem">
+					<div class="two-buttons">
+						<a class="btn btn-action" id="to-signup" href="#">Cadastra-se</a>
+						<a class="btn primary" href="#">Já tenho cadastro</a>
+					</div>
+					<form>
+						<div class="input-field">
+							<img src="./assets/icon-email.svg" alt="">
+							<input type="email" name="login-email" id="login-email" placeholder="admin@dietsystem.com" required>
+						</div>
+						<div class="input-field">
+							<img src="./assets/icon-padlock.svg" alt="">
+							<input type="password" name="login-password" id="login-password" placeholder="Digite a sua senha" required>
+							<img class="eye" src="./assets/icon-eye.svg" alt="" onclick="togglePassword('login')">
+						</div>
+						<div class="forgot-password">
+							<a class="link btn-action" id="to-recover" href="#">Esqueci minha senha</a>
+						</div>
+						<button class="btn primary" type="submit">Entrar</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="signup screen hidden">
+				<div class="container">
+					<img class="logo" src="./assets/logo.svg" alt="Logo da DietSystem">
+					<div class="two-buttons">
+						<a class="btn primary" href="#">Cadastra-se</a>
+						<a class="btn btn-action" id="to-login" href="#">Já tenho cadastro</a>
+					</div>
+					<form>
+						<div class="input-field">
+							<img src="./assets/icon-user.svg" alt="">
+							<input type="text" name="signup-name" id="signup-name" placeholder="Seu nome" required>
+						</div>
+						<div class="input-field">
+							<img src="./assets/icon-phone.svg" alt="">
+							<input type="tel" name="signup-phone" id="signup-phone" placeholder="Seu número de celular" required>
+						</div>
+						<div class="input-field">
+							<img src="./assets/icon-email.svg" alt="">
+							<input type="email" name="signup-email" id="signup-email" placeholder="Seu e-mail" required>
+						</div>
+						<div class="input-field">
+							<img src="./assets/icon-padlock.svg" alt="">
+							<input type="password" name="signup-password1" id="signup-password1" placeholder="Digite uma senha forte" required>
+							<img class="eye" src="./assets/icon-eye.svg" alt="" onclick="togglePassword('signup', 1)">
+						</div>
+						<div class="input-field">
+							<img src="./assets/icon-padlock.svg" alt="">
+							<input type="password" name="signup-password2" id="signup-password2" placeholder="Digite a senha novamente" required>
+							<img class="eye" src="./assets/icon-eye.svg" alt="" onclick="togglePassword('signup', 2)">
+						</div>
+						<div class="terms-field">
+							<input type="checkbox" name="signup-terms" id="signup-terms" required>
+							<label for="signup-terms">Declaro que li e concordo com os <a class="link" href="#">termos de uso</a>, e a <a class="link" href="#">política de privacidade.</a></label>
+						</div>
+						<button class="btn primary" type="submit">Finalizar cadastro</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="recover screen hidden">
+				<div class="container">
+					<img class="logo" src="./assets/logo.svg" alt="Logo da DietSystem">
+					<div class="info">
+						<h3>Digite seu e-mail de cadastro</h3>
+						<p>Você receberá, em seu e-mail, o link para redefenir a sua senha</p>
+					</div>
+					<form>
+						<div class="input-field">
+							<img src="./assets/icon-email.svg" alt="">
+							<input type="email" name="recover-email" password="recover-email" placeholder="Digite seu e-mail cadastrado" required>
+						</div>
+						<div class="two-buttons">
+							<a class="btn btn-action" id="to-login" href="#">Voltar</a>
+							<button type="submit" class="btn btn-action primary" id="to-setpassword">Enviar</a>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="setpassword screen hidden">
+				<div class="container">
+					<img class="logo" src="./assets/logo.svg" alt="Logo da DietSystem">
+					<div class="info">
+						<h3>Crie uma nova senha</h3>
+					</div>
+					<form>
+						<div class="input-field">
+							<img src="./assets/icon-padlock.svg" alt="">
+							<input type="password" name="setpassword-password1" id="setpassword-password1" placeholder="Digite a sua nova senha" required>
+							<img class="eye" src="./assets/icon-eye.svg" alt="" onclick="togglePassword('setpassword', 1)">
+						</div>
+						<div class="input-field">
+							<img src="./assets/icon-padlock.svg" alt="">
+							<input type="password" name="setpassword-password2" id="setpassword-password2" placeholder="Confirme a sua nova senha" required>
+							<img class="eye" src="./assets/icon-eye.svg" alt="" onclick="togglePassword('setpassword', 2)">
+						</div>
+						<button type="submit" class="btn btn-action primary" id="to-login">Alterar senha</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- js -->
+	<script src="./js/app.js"></script>
+
+</body>
+
+</html>
